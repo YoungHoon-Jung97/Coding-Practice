@@ -9,6 +9,18 @@ package programmers.Level2.최솟값만들기;
 //		② B 가장 작은수 부터 배치
 //		③ A,B 배열 순서대로 곱해서 더하기
 
+/*
+버블정렬
+	-인접한 값을 비교하여 위치를 바꾼다.
+	
+	시간 복자도 분석
+	
+	최선		O(n)
+	평균 		O(n²)
+	최악 		O(n²)
+	교환횟수	O(n) ~ O(n²)
+*/
+
 public class BubbleSortSolution {
 	public int solution(int []A, int []B)
     {
