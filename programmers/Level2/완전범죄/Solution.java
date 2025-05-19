@@ -1,4 +1,4 @@
-package ¿ÏÀü¹üÁË;
+package programmers.Level2.¿ÏÀü¹üÁË;
 
 
 public class Solution {
@@ -12,11 +12,8 @@ public class Solution {
 
 	public int solution(int[][] info, int n, int m) {
 		int answer = 0;
-		boolean flag = false; 
 		int aSum =0 ,bSum =0;
 		int index = 0;
-		
-		//System.out.println("hello world");
 		
 		for (int i = 0; i < info.length-1; i++) {
 			int minindex = i;
@@ -37,6 +34,9 @@ public class Solution {
 				index = i;
 				break;	
 			}
+			if (i == info.length-1) {
+				return 0;
+			}
 
 		}
 		
@@ -50,9 +50,8 @@ public class Solution {
 		}
 		
 		for (int i = index; i < info.length; i++) {
-			if (aSum < n) 
-				aSum += info[i][0];
-			else
+			aSum += info[i][0];
+			if (aSum >= n) 
 				return -1;
 		}
 		
