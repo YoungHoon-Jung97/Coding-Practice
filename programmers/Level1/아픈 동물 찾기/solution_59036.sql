@@ -1,5 +1,6 @@
 
---문제 :https://school.programmers.co.kr/learn/courses/30/lessons/59036
-SELECT ANIMAL_ID,NAME
+--문제 :https://school.programmers.co.kr/learn/courses/30/lessons/59039
+SELECT ANIMAL_ID
 FROM ANIMAL_INS
-WHERE INTAKE_CONDITION LIKE "Sick";
+WHERE NAME IS NULL
+ORDER BY ANIMAL_ID ASC;
